@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 export function Home() {
+  // private in nature :: state member are for this component only
   const [tinput, setTinput] = useState("");
-  const updateTinput = (e) => setTinput(e.target.value);
-
   const [list, setList] = useState([]);
+
+  const updateTinput = (e) => setTinput(e.target.value);
   const postTweet = () => {
     setList([tinput, ...list]);
     setTinput("");

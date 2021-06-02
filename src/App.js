@@ -6,14 +6,6 @@ import { AboutUs } from "./components/AboutUs";
 import { Project } from "./components/Project";
 import { ContactUs } from "./components/ContactUs";
 import { AppNavBar } from "./common/AppNavBar";
-import {
-  Button,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
 
 function App() {
   return (

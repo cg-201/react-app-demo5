@@ -1,6 +1,6 @@
 export function ContactUs() {
   return (
-    <div className="bg-primary">
+    <div className="bg-warning" style={{ height: "100vh" }}>
       <h1 className="text-light">Contact Us Page</h1>
     </div>
   );

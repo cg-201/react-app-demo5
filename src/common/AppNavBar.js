@@ -6,6 +6,7 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export function AppNavBar() {
   return (
@@ -14,10 +15,19 @@ export function AppNavBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Project</Nav.Link>
-          <Nav.Link href="#link">About Us</Nav.Link>
-          <Nav.Link href="#link">Contact Us</Nav.Link>
+          <Nav.Link as={Link} to="/home">
+            Home
+          </Nav.Link>
+
+          <Nav.Link as={Link} to="/project">
+            Project
+          </Nav.Link>
+          <Nav.Link as={Link} to="/about-us">
+            About Us
+          </Nav.Link>
+          <Nav.Link as={Link} to="/contact-us">
+            Contact Us
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
